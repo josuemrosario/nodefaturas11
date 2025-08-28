@@ -19,3 +19,7 @@ Os links de commits deste sistema original estão abaixo mostrados:
 **_Configuração inicial do sistema com o nodemon instalado._**
 
 https://github.com/josuemrosario/nodefaturas/commit/a0a9b7d5ba615bbe95a5dd75640ffe3f1710064c
+
+**_Criado a primeira view e um partial de teste_**
+
+https://github.com/josuemrosario/nodefaturas/commit/9bab2639cd6fc8fddcedc9572abd4bea1900d84c
