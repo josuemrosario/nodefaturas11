@@ -1,29 +1,34 @@
-// importações de bibliotecas e configurações básicas
-const http = require("http");
-const porta = 3000;
+const http = require('http');
+const porta = 3000
+const express = require('express');
+const morgan = require('morgan');
+const app = express();
 
-// Criação do servidor
-const server = http.createServer((req, res) => {
-  url = req.url;
-  console.log("url: ", url); //rota solicitada
-
-  //Rotas da aplicação
-    if(url === '/') {
-        res.end('Rota raiz');
-    } else if (url === '/contato') {
-        res.end('Pagina de contato');
-    } else if (url === '/sobre') {
-        res.end('Pagina sobre');
-    } else {
-        res.writeHead(404) //rota nao cadastrada
-        res.end('Rota nao cadastrada');
-    }
+// configurações iniciais
+app.use(morgan('dev'));
 
 
+// rotas da aplicação
+app.get('/', (req, res) => {
+    res.send('rota raiz');
 });
 
-// Coloca o servidor no ar
-server.listen(porta, () => {
-  console.log("Servidor rodando");
-  console.log("Endereco: http://localhost:" + porta);
+app.get('/contato', (req, res) => {
+    res.send('rota contato');
+});
+
+
+app.get('/sobre', (req, res) => {
+    res.send('rota sobre');
+});
+
+
+// Rota de erro
+app.use((req, res) => {
+  res.status(404).send("Página não encontrada!");
+});
+
+app.listen(porta, () => {
+    console.log('Servidor rodando');
+    console.log('Endereco: http://localhost:' + porta);
 });
