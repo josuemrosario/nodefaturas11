@@ -72,7 +72,11 @@ Instalar a extensão ejs language support
 
 ![extensão para ejs](./img/03-01-ejs-language-support.png)
 
+<<<<<<< HEAD
 Modifique a rota raiz para chamar usar a view index
+=======
+Altere a rota raiz para chamar a template index
+>>>>>>> 46ee48b (Tut 3 implementado)
 
 ```javascript
 app.get("/", (req, res) => {
