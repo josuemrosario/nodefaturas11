@@ -56,3 +56,47 @@ Error: listen EADDRINUSE: address already in use :::3000
 
 1. verificar se o servidor já está rodando em outra linha de comnado
 2. A porta escolhida está em uso por outro processo desconhecido. Tente alterar a posta que o servidor tenta usar.
+
+## Failed to lookup view "xxxx"
+
+**_Descrição :_** Ao tentar acessar uma view ocorre o erro failed to look view seguido pelo nome da view
+
+**_Exemplo de Erro_**
+
+```
+Error: Failed to lookup view "naoexiste" in views directory "./views"
+    at Function.render (C:\Users\josue.rosario\Documents\nodefaturas\node_modules\express\lib\application.js:562:17)
+```
+
+**_Possíveis Soluções_**
+
+1. Verificar se a view está sendo chamada com o nome correto
+
+```javascript
+app.get("/", (req, res) => {
+  //res.send('rota raiz');
+  res.render("naoexiste", { mensagem: "rota raiz" });
+});
+```
+
+2. Verificar se a view existe dentro da pasta de views
+
+## Cannot set headers after they are sent to the client
+
+**_Exemplo de Erro_**
+
+[ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+**_Possíveis Soluções_**
+
+1. Depois que o servidor envia o response nada mais pode ser executado. Verifique se existe um render ou send seguido.
+
+Exemplo:
+
+```javascript
+// rotas da aplicação
+app.get("/", (req, res) => {
+  res.send("rota raiz"); // essa é a resposta
+  res.render("index", { mensagem: "rota raiz" }); //essa é uma resposta depois da resposta
+});
+```
