@@ -1,0 +1,7 @@
+/*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
+.static {
+  position: static;
+}
+h1, p {
+  font-size: 50px;
+}

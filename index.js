@@ -8,6 +8,7 @@ const app = express();
 app.use(morgan('dev'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
+app.use(express.static('./public'));
 
 
 // rotas da aplicação
