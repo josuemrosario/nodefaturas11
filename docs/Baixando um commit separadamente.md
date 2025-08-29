@@ -23,3 +23,7 @@ https://github.com/josuemrosario/nodefaturas/commit/a0a9b7d5ba615bbe95a5dd75640f
 **_Criado a primeira view e um partial de teste_**
 
 https://github.com/josuemrosario/nodefaturas/commit/9bab2639cd6fc8fddcedc9572abd4bea1900d84c
+
+**_ pasta public configurada e scripts de geração de CSS _**
+
+https://github.com/josuemrosario/nodefaturas/commit/d7d007d403c88ba11dcfff6a9500011d4f1ba530
