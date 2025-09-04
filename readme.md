@@ -41,7 +41,13 @@ npm i
 npm run devcss
 ```
 
-4. Rode o projeto
+6. Abra um novo terminal e rode abrir_mongo.bat
+
+```
+.\abrir_mongo.bat
+```
+
+7. Rode o projeto
 
 ```
 npm run dev
@@ -55,3 +61,4 @@ npm run dev
 * Express
 * Morgan
 * MongoDB
+* Mongoose
