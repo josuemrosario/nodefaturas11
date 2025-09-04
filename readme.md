@@ -36,7 +36,7 @@ npm i
 |----------|----------|
 |PORTA |Porta em que a aplicação vai rodar|
 
-4. 'Compile' o CSS
+5. 'Compile' o CSS
 
 ```
 npm run devcss
