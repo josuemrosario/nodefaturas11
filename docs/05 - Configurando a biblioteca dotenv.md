@@ -84,7 +84,7 @@ exemplo de saída
 
 ![teste dotenv](./img/05-01-teste-dotenv.png)
 
-# 1. Configurando a porta
+# 2. Configurando a porta
 
  Vamos configurar a porta como variável de ambiente.
  

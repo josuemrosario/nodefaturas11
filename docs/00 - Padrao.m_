@@ -1,0 +1,62 @@
+**versao do laboratório:** 1.0.0
+
+**Data Criaçao:** dd/mm/mmmm
+
+# Descrição do Laboratório
+
+O que será executado no laboratório
+
+# Objetivos do Laboratório
+
+Compreender :
+
+- conceito 1
+- conceito 2
+
+
+# Links para estudo e consulta
+
+**_Descricao do link_**
+
+https://xxxxxxxxx/
+
+
+# 1. descricao do passo 1
+
+micro atividade do passo 1
+`comando`
+
+caminho\do\arquivo.ext
+```javascript
+console.log(teste)
+```
+
+caminho\do\arquivo.ext
+
+```html
+<html>
+  <p>exemplo de html</p>
+</html>
+```
+
+caminho\do\arquivo.ext
+
+```css
+h1,
+p {
+  font-size: 50px;
+}
+```
+
+![descricao da imagem](./img/nomeimagem.png)
+
+| titulo 1   | titulo 2   | titulo 3   |
+| ---------- | ---------- | ---------- |
+| dado 1     | dado 2     | dado 3     |
+
+
+# Alterações Executadas
+
+| Data       | Responsável   | Descrição           |
+| ---------- | ------------- | ------------------- |
+| 29/08/2025 | Josué Rosario | Criação do Tutorial |
