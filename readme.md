@@ -14,10 +14,9 @@ Observe os nomes de commit e baixe o commit específico em arquivo ZIP para obte
 
 ### Pré-requisitos
 
-O ambiente node deve estar instalado. Se ainda não está instalado baixe o ambiente e instale em 
+1. O ambiente node deve estar instalado. Se ainda não está instalado baixe o ambiente e instale em https://nodejs.org/pt
 
-https://nodejs.org/pt
-
+2. O mongoDB precisa estar instalado localmente. Apesar disto é possível configurar para rodar a partir da nuvem
 
 ### Instalação
 
@@ -55,3 +54,4 @@ npm run dev
 * PostCSS
 * Express
 * Morgan
+* MongoDB
