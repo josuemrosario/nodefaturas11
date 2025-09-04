@@ -34,6 +34,8 @@ npm i
 | VARIAVEL | DESCRIÇÃO |
 |----------|----------|
 |PORTA |Porta em que a aplicação vai rodar|
+|MONGODB_URI | String de conexão |
+|DBNAME | nome do banco (fatura-db) |
 
 5. 'Compile' o CSS
 
