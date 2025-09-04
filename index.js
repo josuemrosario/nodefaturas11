@@ -1,14 +1,18 @@
 const http = require('http');
-const porta = 3000
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
+
+//variáveis de ambiente
+require('dotenv').config();
+
 
 // configurações iniciais
 app.use(morgan('dev'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(express.static('./public'));
+const porta = Number(process.env.PORTA) || 3000
 
 
 // rotas da aplicação
