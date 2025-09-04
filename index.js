@@ -9,8 +9,6 @@ require('dotenv').config();
 //Conexao com o banco
 require('./libs/dbConnect');
 
-
-
 // configurações iniciais
 app.use(morgan('dev'));
 app.set('views', './views');
