@@ -1,7 +1,12 @@
 const http = require('http');
 const express = require('express');
+const router = express.Router();
 const morgan = require('morgan');
 const app = express();
+
+//importação de rotas
+const usuarioRoutes = require('./routes/usuario.routes'); 
+
 
 //variáveis de ambiente
 require('dotenv').config();
@@ -34,6 +39,8 @@ app.get('/sobre', (req, res) => {
      res.render('index',{mensagem:'rota sobre'}) 
 });
 
+//rotas de usuario
+app.use('/usuario', usuarioRoutes);
 
 // Rota de erro
 app.use((req, res) => {
