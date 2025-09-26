@@ -343,7 +343,7 @@ const obterUsuario = (req, res) => {
 
 obs: A função findOne retorna uma promisse que está sendo tratada por then.
 
-Ao pesquisar a view usuário é renderizada que ainda não existe. Crie a view abaixo
+No pesquisar a view usuário é renderizada mas ela ainda não existe. Crie a view abaixo
 
 views\usuario.ejs
 

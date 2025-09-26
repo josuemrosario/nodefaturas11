@@ -23,9 +23,7 @@ const criarUsuario = async (req, res) => {
           password: '1234',
     }).then((usuarioCriado)=>{
         res.render('usuario',{mensagem:'Usuario Criado',usuario: usuarioCriado}) 
-    });
-
-    
+    });  
 
   }catch{
     
