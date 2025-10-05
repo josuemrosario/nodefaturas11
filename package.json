@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "devcss": "postcss public/styles/main.css -o public/styles/cssotimizado.css -w"
+    "devcss": "postcss public/styles/main.css -o public/styles/cssotimizado.css"
   },
   "keywords": [],
   "author": "",
